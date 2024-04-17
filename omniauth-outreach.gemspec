@@ -4,7 +4,7 @@ require_relative "lib/omniauth/outreach/version"
 
 Gem::Specification.new do |spec|
   spec.name = "omniauth-outreach"
-  spec.version = Omniauth::Outreach::VERSION
+  spec.version = OmniAuth::Outreach::VERSION
   spec.authors = ["Tiaki YEN"]
   spec.email = ["tiaki@ekohe.com"]
 
@@ -22,6 +22,19 @@ Gem::Specification.new do |spec|
     end
   end
   spec.require_paths = ["lib"]
+
+
+  spec.bindir = "exe"
+  spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
+  spec.require_paths = ["lib"]
+
+  # VCR for testing APIs
+  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "webmock"
+  # Rubocop
+  spec.add_development_dependency "rubocop"
+  # For debug binding.pry
+  spec.add_development_dependency "pry"
 
   spec.add_dependency "omniauth"
   spec.add_dependency "omniauth-oauth2"

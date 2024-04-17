@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'omniauth'
+require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
