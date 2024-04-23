@@ -16,10 +16,9 @@ module OmniAuth
       uid { raw_info['org_user_id'] }
 
       info do
-        {
-          name: raw_info['aud'],
-          email: raw_info['sub']
-        }
+        # In our case, Outreach is returning the email address as the sub.
+        # But we still need to check if it's an email address or not.
+        raw_info['sub'].match?(/.*@.*\..*/) ? { email: raw_info['sub']} : { name: raw_info['sub'] }
       end
 
       def raw_info
