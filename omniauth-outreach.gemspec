@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Tiaki YEN"]
   spec.email = ["tiaki@ekohe.com"]
 
-  spec.summary = %q{OmniAuth Oauth2 strategy for outreach.io.}
-  spec.description = %q{OmniAuth Oauth2 strategy for outreach.io - https://developers.outreach.io/api/oauth/}
+  spec.summary = "OmniAuth Oauth2 strategy for outreach.io."
+  spec.description = "OmniAuth Oauth2 strategy for outreach.io - https://developers.outreach.io/api/oauth/"
   spec.homepage = "https://github.com/ekohe/omniauth-outreach"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
@@ -21,8 +21,6 @@ Gem::Specification.new do |spec|
       (f == __FILE__) || f.match(%r{\A(?:(?:bin|test|spec|features)/|\.(?:git|travis|circleci)|appveyor)})
     end
   end
-  spec.require_paths = ["lib"]
-
 
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
@@ -38,5 +36,4 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "omniauth"
   spec.add_dependency "omniauth-oauth2"
-
 end
