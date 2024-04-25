@@ -31,6 +31,6 @@ Gem::Specification.new do |spec|
   # For debug binding.pry
   spec.add_development_dependency "pry"
 
-  spec.add_dependency "omniauth", "~> 2.1.2"
-  spec.add_dependency "omniauth-oauth2", "~> 1.8.0"
+  spec.add_dependency "omniauth", ">= 1"
+  spec.add_dependency "omniauth-oauth2", ">= 1"
 end
