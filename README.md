@@ -1,12 +1,16 @@
-# Omniauth::Outreach
+# OmniAuth Outreach OAuth2 Strategy
+
+Strategy to authenticate with Outreach via OAuth2 in OmniAuth.
 
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
+Add to the application's `Gemfile`:
 
-    $ bundle add omniauth-outreach
+    $ gem 'omniauth-outreach'
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+Then `bundle install`
+
+or If bundler is not being used to manage dependencies, install the gem by executing:
 
     $ gem install omniauth-outreach
 
@@ -24,5 +28,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 Bug reports and pull requests are welcome on GitHub at https://github.com/ekohe/omniauth-outreach.
 
 ## License
+
+Copyright (c) 2024 by Tiaki
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
